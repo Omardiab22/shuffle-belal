@@ -1,283 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify-Like Library</title>
-    <style>
-        /* Global Styles */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            background-color: #181818;
-        }
-
-        /* Layout Container */
-        .spotify-layout {
-            display: grid;
-            grid-template-areas:
-                "sidebar main"
-                "playback playback";
-            grid-template-columns: 250px 1fr;
-            grid-template-rows: 1fr 80px;
-            height: 100vh;
-        }
-
-        /* Sidebar Styles */
-        .sidebar {
-            grid-area: sidebar;
-            background: #121212;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .sidebar h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .sidebar nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .sidebar nav a {
-            text-decoration: none;
-            color: #b3b3b3;
-            font-size: 16px;
-        }
-
-        .sidebar nav a:hover {
-            color: #1db954;
-        }
-
-        /* Main Content Styles */
-        .main-content {
-            grid-area: main;
-            background: #181818;
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        .main-content h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .playlist-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-        }
-
-        /* Playlist Card Styles */
-        .playlist-card {
-            background: #282828;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.2s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .playlist-card:hover {
-            transform: scale(1.05);
-            background: #333333;
-        }
-
-        .playlist-card img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .playlist-card span {
-            font-size: 16px;
-            color: #fff;
-        }
-
-        /* Create Playlist Button */
-        .create-playlist {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #1db954;
-            border: none;
-            color: #fff;
-            border-radius: 8px;
-            padding: 15px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
-            gap: 10px;
-            transition: background 0.3s;
-        }
-
-        .create-playlist:hover {
-            background: #1aa34a;
-        }
-
-        .create-playlist span {
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        /* Modal Styles */
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: none;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal:target {
-            display: flex;
-        }
-
-        .modal-content {
-            background: #282828;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .modal-content input {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            font-size: 16px;
-            outline: none;
-            color: #000;
-            background-color: #fff;
-        }
-
-        .modal-content button {
-            background: #1db954;
-            border: none;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .modal-content button:hover {
-            background: #1aa34a;
-        }
-
-        .modal-close {
-            display: inline-block;
-            margin-top: 10px;
-            font-size: 14px;
-            color: #fff;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-
-        /* Playback Bar Styles */
-        .playback-bar {
-            grid-area: playback;
-            background: #282828;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 10px 20px;
-            border-top: 1px solid #121212;
-        }
-
-        a img {
-            background: #1db954;
-            color: #fff;
-            border-radius: 20px;
-            padding: 7px 7px;
-            cursor: pointer;
-            font-size: 16px;
-            height: 35px;
-        }
-
-        .playback-bar a img:hover {
-            background: #1aa34a;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="textstyle.css">
 </head>
+<body class="bg-dark text-white">
+  <div class="spotify-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Sidebar content (static) -->
+    </aside>
 
-<body>
-    <div class="spotify-layout">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h1>Spotify</h1>
-            <nav>
-                <ul>
-                    <li><a href="Shuffle.html">Home</a></li>
-                    <li><a href="Search.html">Search</a></li>
-                    <li><a href="Library.html">Library</a></li>
-                </ul>
-            </nav>
-        </aside>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Main content (static) -->
+    </main>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <h2>Your Library</h2>
-            <!-- Button to Open Modal -->
-            <a href="#create-playlist-modal" class="create-playlist">
-                <img src="icons/plus-icon.svg" alt="Add" width="20">
-                <span>Create Playlist</span>
-            </a>
-
-            <!-- Playlists -->
-            <div class="playlist-grid">
-                <div class="playlist-card">
-                    <img src="https://via.placeholder.com/100" alt="Playlist Cover">
-                    <span>My Playlist 1</span>
-                </div>
-
-                <div class="playlist-card">
-                    <img src="https://via.placeholder.com/100" alt="Playlist Cover">
-                    <span>My Playlist 2</span>
-                </div>
+    <!-- Music Player -->
+    <div class="music-player">
+      <div class="player-top">
+        <img 
+          src="https://i.scdn.co/image/ab67616d00001e02980d6365041b5aa24a40f2f6" 
+          alt="Now Playing" 
+          class="album-art"
+        />
+        <div class="player-info">
+          <div class="time-slider">
+            <span class="time">0:00</span>
+            <input type="range" min="0" max="100" value="0" class="slider">
+            <span class="time">3:30</span>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">⟨</button>
+            <button class="control-btn play-btn">▶</button>
+            <button class="control-btn next-btn">⟩</button>
+            <div class="volume-control">
+              <button class="volume-btn">🔊</button>
+              <input type="range" min="0" max="100" value="50" class="volume-slider">
             </div>
-        </main>
-
-        <!-- Modal -->
-        <div id="create-playlist-modal" class="modal">
-            <div class="modal-content">
-                <label for="playlist-name">Name your playlist</label>
-                <input type="text" id="playlist-name" placeholder="Playlist Name">
-                <button>Add Playlist</button>
-                <a href="#" class="modal-close">Cancel</a>
-            </div>
+          </div>
         </div>
-
-        <!-- Playback Bar -->
-        <footer class="playback-bar">
-            <a><img src="icons/skip-previous-svgrepo-com.svg" alt="Previous"></a>
-            <a><img src="icons/music-player-bottom-icon.png" alt="Play"></a>
-            <a><img src="icons/skip-next-svgrepo-com.svg" alt="Next"></a>
-        </footer>
+      </div>
     </div>
+  </div>
 </body>
-
 </html>

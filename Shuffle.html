@@ -6,115 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify-Like Layout</title>
     <link rel="stylesheet" href="css/shuffle-style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 
 <body>
     <div class="spotify-layout">
         <!-- Sidebar -->
+        
         <aside class="sidebar">
-            <h1>Spotify</h1>
+            <img src="icon-logo.svg" alt="Logo">
             <nav>
                 <ul>
-                    <li><a >Home</a></li>
-                    <li><a href="search.html" >Search</a></li>
-                    <li><a href="#">Library</a></li>
+                    <li><a href="Shuffle.html"><i class='bx bxs-home'></i> Home</a></li>
+                    <li><a href="library.html"><i class='bx bx-library'></i> Library</a></li>
                 </ul>
             </nav>
         </aside>
+        
 
         <!-- Main Content -->
         <main class="main-content">
-            <h2>Made For You</h2>
+            <h2>Quick picks</h2>
             <div class="playlist-grid">
                 <!-- Playlist Cards -->
                 <div class="playlist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Daily Mix">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02980d6365041b5aa24a40f2f6" >
                         <div class="card-overlay">
-                            <span class="label">Daily Mix</span>
-                            <span class="number">01</span>
+                            <span class="label">Recently played</span>
                         </div>
                     </div>
-                    <p class="card-description">Marwan Pablo, Marwan Moussa, Abo El Anwar...</p>
+                    <p class="card-description">TheUnkowning <br><strong>(Jfarrari)</strong></p>
                 </div>
 
                 <div class="playlist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Daily Mix">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ff8e84a3595776cd54c38598" alt="Daily Mix">
                         <div class="card-overlay">
-                            <span class="label">Daily Mix</span>
-                            <span class="number">02</span>
+                            <span class="label">Recently played</span>
                         </div>
                     </div>
-                    <p class="card-description">Adele, Taylor Swift, Ed Sheeran...</p>
+                    <p class="card-description">Like a Thunder <br><strong>(Max Coveri)</strong></p>
                 </div>
 
                 <div class="playlist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Daily Mix">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02fc6789beaf73900aeee1bdbd" alt="Daily Mix">
                         <div class="card-overlay">
-                            <span class="label">Daily Mix</span>
-                            <span class="number">03</span>
+                            <span class="label">Special for you</span>
                         </div>
                     </div>
-                    <p class="card-description">Drake, Kanye West, Travis Scott...</p>
+                    <p class="card-description">Killing My Love <br><strong>(Leslie Parrish)</strong></p>
                 </div>
             </div>
 
-            <h2>Popular Artists</h2>
+            <h2>Loved Artist</h2>
             <div class="artist-grid">
                 <!-- Artist Cards -->
                 <div class="artist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Artist">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e6988b763326740b2bb46650" alt="Artist">
                     </div>
-                    <p class="card-description">Marwan Pablo</p>
+                    <p class="card-description"><strong>GOOD KID</strong></p>
                 </div>
 
                 <div class="artist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Artist">
+                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84232f1ffa312276bc8a5a2be6" alt="Artist">
                     </div>
-                    <p class="card-description">Marwan Moussa</p>
+                    <p class="card-description"><strong>Laufey</strong></p>
                 </div>
 
                 <div class="artist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Artist">
+                        <img src="images/linkin park.jpg" alt="Artist">
                     </div>
-                    <p class="card-description">Abo El Anwar</p>
+                    <p class="card-description"><strong>LINKIN PARK</strong></p>
                 </div>
 
                 <div class="artist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Artist">
+                        <img src="https://i.scdn.co/image/ab676161000051745f10cea1a442c10f5d970e11" alt="Artist">
                     </div>
-                    <p class="card-description">Adele</p>
+                    <p class="card-description"><strong>TOL8TE</strong></p>
                 </div>
 
                 <div class="artist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Artist">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a3c8e3720a355498231be085" alt="Artist">
                     </div>
-                    <p class="card-description">Taylor Swift</p>
+                    <p class="card-description"><strong>Curtis Waters</strong></p>
                 </div>
 
                 <div class="artist-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/150" alt="Artist">
+                        <img src="images/toby-fox-undertale.png" alt="Artist">
                     </div>
-                    <p class="card-description">Ed Sheeran</p>
+                    <p class="card-description">Toby Fox</p>
                 </div>
             </div>
         </main>
-
-        <!-- Playback Bar -->
-        <footer class="playback-bar">
-            <a><img src="icons/skip-previous-svgrepo-com.svg" alt=""></a>
-            <a><img src="icons/music-player-bottom-icon.png" alt=""></a>
-            <a><img src="icons/skip-next-svgrepo-com.svg" alt=""></a>
-        </footer>
-    </div>
+        
 </body>
 
 </html>

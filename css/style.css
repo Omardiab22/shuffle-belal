@@ -156,16 +156,22 @@
     background-color: #5FF9F5;
     border: none;
     border-radius: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
     bottom: -15px;
+    font-family: 'Rubik';
+
 }
 
 .submiting-bottom:hover {
     background-color: #3ec9b7;
 }
+.submiting-bottom h1{
+    size: 120%;
+}
+
 
 .register-link {
     text-align: center;
